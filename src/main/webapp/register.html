@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<script src="js/axios.js"></script>
+<script src="js/vue.js"></script>
+<style>
+    #registerbox{
+        margin: 0 auto;
+        width: 400px;
+    }
+</style>
+<body>
+<h1 style="text-align: center">欢迎注册文件管理系统网站</h1>
+<div id="registerbox">
+    <div>
+        <div>
+            用户名：<br>
+            <input type="text" @blur="judgeUserName" name="username" v-model="username" id="username" placeholder="请输入用户名" onkeyup="value=value.replace(/\W/g,'')" onpaste="value=value.replace(/\W/g,'')" oncontextmenu = "value=value.replace(/\W/g,'')"><span style="font-size: xx-small;"> 2到10位中文,字母,数字及下划线</span>
+            <b style="color: red"><br>{{username_error_message}}</b>
+        </div>
+        <div>
+            密码：<br>
+            <input type="password" @blur="judgePassword" name="password" v-model="password" id="password" placeholder="请输入密码" onkeyup="value=value.replace(/[^a-zA-Z0-9]/g,'')" onpaste="value=value.replace(/[^a-zA-Z0-9]/g,'')" oncontextmenu = "value=value.replace(/[^a-zA-Z0-9]/g,'')"><span style="font-size: xx-small">6到20位字母或数字</span>
+            <b id="password_unllegal" style="color: red;"><br>{{password_error_message}}</b>
+        </div>
+        <div>
+            确认密码：<br>
+            <input type="password" @blur="surePassword" name="sure_password" v-model="sure_password" id="sure_password" placeholder="请输入密码" onkeyup="value=value.replace(/[^a-zA-Z0-9]/g,'')" onpaste="value=value.replace(/[^a-zA-Z0-9]/g,'')" oncontextmenu = "value=value.replace(/[^a-zA-Z0-9]/g,'')"><span style="font-size: xx-small">6到20位字母或数字</span>
+            <b style="color: red;"><br>{{sure_error_message}}</b>
+        </div>
+<!--        <div>-->
+<!--            个性签名：<br>-->
+<!--            <input type="text" id="description_word" placeholder="选择性填写">-->
+<!--        </div>-->
+        <div style="position: relative">
+            <button value="注册" @click="register" name="register" id="register">注册</button>
+        </div>
+        <b style="color: red"><br>{{register_error_message}}</b>
+    </div>
+</div>
+</body>
+<script src="js/register.js"></script>
+</html>

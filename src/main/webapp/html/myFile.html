@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/font-family.css"/>
+    <link rel="stylesheet" href="../css/background.css"/>
+    <link rel="stylesheet" href="../css/head.css"/>
+    <link rel="stylesheet" href="../css/myFile.css"/>
+    <link rel="stylesheet" href="../css/divButton.css">
+</head>
+<body>
+<script>
+    var currentNode = null;
+
+</script>
+<div id="myfilevuebox">
+    <div id="header">
+        <div id="upload" class="folder divButton">上传文件</div>
+        <div id="newFolder" class="folder divButton">新建目录</div>
+        <span id="currentFile">当前文件:{{ currentFile }}</span>
+        <input type="text" style="color: black" placeholder="在当前目录搜索" class="folder,divButton" id="keyword"/>
+        <select id="searchFiles" style="color: black">
+<!--            <option value="none" selected hidden disabled></option>-->
+        </select>
+        <div id="search" class="folder divButton">搜索</div>
+        <div id="modify" class="file divButton">修改</div>
+        <div id="rename" class="divButton">重命名</div>
+        <div id="download" class="divButton">下载</div>
+        <div id="delete" class="divButton">删除</div>
+        <div id="power" class="folder divButton">权限</div>
+    </div>
+    <div id="fileTree">
+
+    </div>
+
+    <div id="saveButton" class="file divButton" style="display:none">保存</div>
+    <div id="cancelButton" class="file divButton" style="display:none">取消</div>
+
+    <div id="contentBox" >
+
+    </div>
+</div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/marked/2.0.3/marked.js"></script>
+<script src="../js/vue.js"></script>
+<!--<script src=http://code.jquery.com/jquery-latest.js"></script>-->
+<script src="../js/axios.js"></script>
+<script src="../js/interactionScript/operateFileTree.js"></script>
+<script src="../js/interactionScript/getFileTree.js"></script>
+<script src="../js/interactionScript/newFolder.js"></script>
+<script src="../js/interactionScript/rename.js"></script>
+<script src="../js/interactionScript/deleteNode.js"></script>
+<script src="../js/interactionScript/uploadFile.js"></script>
+<script src="../js/searchFile.js"></script>
+<script src="../js/interactionScript/changeText.js"></script>
+<script src="../js/interactionScript/download.js"></script>
+</html>

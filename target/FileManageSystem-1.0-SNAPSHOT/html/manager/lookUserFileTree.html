@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/font-family.css"/>
+    <link rel="stylesheet" href="../../css/background.css"/>
+    <link rel="stylesheet" href="../../css/head.css"/>
+    <link rel="stylesheet" href="../../css/myFile.css"/>
+    <link rel="stylesheet" href="../../css/divButton.css"/>
+</head>
+<body>
+<script>
+    var currentNode = null;
+
+</script>
+<div id="myfilevuebox">
+    <div id="header">
+
+        <span id="currentFile">当前文件:{{ currentFile }}</span>
+        <input type="text" style="color: black" placeholder="在当前目录搜索" class="folder,divButton" id="keyword"/>
+        <select id="searchFiles" style="color: black">
+            <!--            <option value="none" selected hidden disabled></option>-->
+        </select>
+        <div id="search" class="folder divButton">搜索</div>
+
+        <div id="download" class="divButton">下载</div>
+
+        <div id="power" class="folder divButton">权限</div>
+    </div>
+    <div id="fileTree">
+
+    </div>
+
+    <div id="contentBox" >
+
+    </div>
+</div>
+</body>
+<script src="../../js/vue.js"></script>
+<script src=http://code.jquery.com/jquery-latest.js"></script>
+<script src="../../js/axios.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/marked/2.0.3/marked.js"></script>
+<script src="../../js/interactionScript/operateFileTree.js"></script>
+<script src="../../js/interactionScript/managerGetFileTreeByUserId.js"></script>
+<script src="../../js/searchFile.js"></script>
+<script src="../../js/interactionScript/download.js"></script>
+</html>

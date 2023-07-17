@@ -1,0 +1,7 @@
+.divButton:hover {
+    background-color: lightskyblue;
+}
+
+.divButton:checked{
+    background-color: aliceblue;
+}

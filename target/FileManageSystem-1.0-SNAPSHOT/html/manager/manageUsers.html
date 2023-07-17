@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理用户</title>
+    <link rel="stylesheet" href="../../css/font-family.css"/>
+    <link rel="stylesheet" href="../../css/background.css"/>
+    <link rel="stylesheet" href="../../css/head.css"/>
+    <link rel="stylesheet" href="../../css/divButton.css"/>
+    <link rel="stylesheet" href="../../css/managerUser.css"/>
+</head>
+<body>
+<div id="usersBox">
+    <h1 style="left: 45%">管理用户</h1>
+    <table id="userTable">
+        <tbody>
+            <tr>
+                <th id="usernameTh">用户名</th><th id="userIdTh">用户ID</th><th id="registerDateTh">注册时间</th><th id="userStatueTh">状态</th>
+            </tr>
+            <tr v-for="user in usersArray">
+                <td><a @click="toUserFileTree(user.userId)" >{{user.username}}</a></td><td>{{user.userId}}</td><td>{{user.registerDate}}</td><td><input type="radio" v-bind:name="user.username" v-on:change="changeStatue(user)" value="1" v-model="user.userStatue"/>正常  <input type="radio" v-bind:name="user.username" value="2" v-on:change="changeStatue(user)" v-model="user.userStatue"/>冻结</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="buttonBox">
+        <button type="button" id="back">上一页</button>
+        <button v-for="pageNum in totalPageNum" @click="loadUsers(pageNum)">{{pageNum}}</button>
+
+<!--        //编译之后的代码-->
+<!--        <button  @click="loadUsers(1)">1</button>-->
+<!--        <button  @click="loadUsers(2)">2</button>-->
+
+
+<!--        <button  @click="loadUsers(5)">5</button>-->
+        <button type="button" id="forward">下一页</button>
+    </div>
+</div>
+</body>
+<script src="../../js/vue.js"></script>
+<script src="../../js/axios.js"></script>
+<script src="../../js/interactionScript/getUsers.js"></script>
+</html>

@@ -1,0 +1,128 @@
+#header{
+    position:absolute;
+    top: 40px;
+    display: flow;
+}
+
+.divButton{
+    border: 2px solid black;
+    width: 75px;
+    height: 40px;
+    margin: 0px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: deepskyblue;
+}
+
+#upload{
+    left: 10px;
+}
+#newFolder{
+    left: 95px;
+}
+#currentFile{
+    position: absolute;
+    width: 200px;
+    left: 180px;
+}
+#keyword{
+    position: absolute;
+    left: 420px;
+}
+#search{
+    left: 580px;
+}
+#modify{
+    left: 685px;
+}
+#rename{
+    left: 770px;
+}
+#download{
+    left: 855px;
+}
+#delete{
+    left: 940px;
+}
+#power{
+    left: 1025px;
+}
+#fileTree{
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 400px;
+    height: calc(100% - 100px);
+}
+
+#contentBox{
+    position: absolute;
+    top:100px;
+    left:300px;
+    width: calc(100% - 300px);
+    height: calc(100% - 120px);
+}
+
+embed{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 300px);
+    height: calc(100% - 120px);
+    color: white;
+}
+/*.tree-item::before{*/
+/*    content: '';*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    flex-shrink: 0;*/
+/*    margin-right: 8px;*/
+/*    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M.833 3.75c0-.92.746-1.667 1.667-1.667h5.417c.247 0 .481.11.64.3l1.833 2.2h7.11c.92 0 1.667.747 1.667 1.667v10c0 .92-.747 1.667-1.667 1.667h-15c-.92 0-1.667-.746-1.667-1.667V3.75zm6.693 0H2.5v4.584h15V6.25H10a.833.833 0 0 1-.64-.3l-1.834-2.2zM17.5 10h-15v6.25h15V10z' fill='%23000' fill-opacity='.45'/%3E%3C/svg%3E") center no-repeat;*/
+/*}*/
+/*details[open]>summary:not(:only-child)>.tree-item::before{*/
+/*    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.917 2.083c.247 0 .481.11.64.3l1.833 2.2h5.443c.92 0 1.667.747 1.667 1.667v1.667h.833a.833.833 0 0 1 .817.997l-1.666 8.333a.833.833 0 0 1-.817.67H1.677a.814.814 0 0 1-.157-.013.83.83 0 0 1-.687-.82V3.75c0-.92.746-1.667 1.667-1.667h5.417zM10 6.25a.833.833 0 0 1-.64-.3l-1.834-2.2H2.5v6.564l.441-1.766a.833.833 0 0 1 .809-.631h12.083V6.25H10zm-7.266 10L4.4 9.584h12.916l-1.334 6.666H2.733z' fill='%23000' fill-opacity='.45'/%3E%3C/svg%3E");*/
+/*}*/
+
+summary:only-child{
+    list-style: none;
+    left: 15px;
+}
+
+#searchFiles{
+    left: 420px;
+    top: 40px;
+    position: absolute;
+}
+
+.tree-item:hover{
+    background: honeydew;
+}
+
+details{
+    padding-left: 10px
+}
+
+option{
+    color: black;
+}
+/*div{*/
+/*    border: 2px solid black;*/
+/*    display: flex;*/
+/*    position: absolute;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+#saveButton{
+    right: 150px;
+    top: 120px;
+    z-index: 10;
+}
+
+#cancelButton{
+    right: 150px;
+    top: 180px;
+    z-index:10;
+}

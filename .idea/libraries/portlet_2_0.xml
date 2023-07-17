@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="portlet-2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../apache-tomcat-10.0.26-windows-x64/web_jar/portlet-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

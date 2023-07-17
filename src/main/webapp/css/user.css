@@ -1,0 +1,55 @@
+#infoBox{
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+    margin: 0px;
+    position: absolute;
+    text-align: center;
+    background-color: unset;
+    left: 400px;
+}
+
+#infoBox p{
+    position: relative;
+    margin-top: 20px;
+    top: 100px;
+    height: 30px;
+}
+
+#myFile{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#poweredFile{
+    position: absolute;
+    left: 100px;
+    top: 155px;
+}
+#authorizedFile{
+    position:absolute;
+    left: 100px;
+    top: 210px;
+}
+
+#alterUserInfo{
+    position: absolute;
+    left:100px;
+    top: 265px;
+}
+#save{
+    position: absolute;
+    left: calc(100% + 200px);
+    top: 100px;
+}
+#cancel{
+    position: absolute;
+    left: calc(100% + 200px);
+    top:155px;
+}
+#deleteUser{
+    position: absolute;
+    top:320px;
+    left:100px;
+}

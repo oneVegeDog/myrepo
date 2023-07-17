@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/druid.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/changeText.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/changeUserInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/deleteNode.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/download.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/getFileTree.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/getUserInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/getUsers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/managerGetFileTreeByUserId.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/newFolder.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/operateFileTree.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/rename.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/interactionScript/uploadFile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/login.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/register.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/searchFile.js" charset="UTF-8" />
+  </component>
+</project>

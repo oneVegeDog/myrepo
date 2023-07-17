@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="zhuxiao">注销</button>
+
+</body>
+<script src="js/axios.js"></script>
+<script>
+
+    function zhuxiao(){
+        axios.get("http://localhost:8080/FileManageSystem/afterLogin/zhuxiao").then(resp=>{
+            alert(resp.data);
+            let statue = resp.data;
+            if(statue==200){
+                location.href="http://localhost:8080/FileManageSystem/index.html"
+            }
+        });
+    }
+document.getElementById("zhuxiao").onclick=function (){
+        zhuxiao();
+}
+</script>
+</html>
